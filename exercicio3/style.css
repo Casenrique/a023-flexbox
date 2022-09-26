@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+body {
+  background-color: black;
+  /* padding: 350px; retirei o padding por questões de responsividade. Com os comandos abaixo, ele fica centralizado. */
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
 main{
   display: flex;
   gap: 20px;
@@ -23,16 +31,25 @@ section{
 }
 
 #section-1{
+  order: 1;
 }
 
 #section-2{
+  order: 2;
+  flex-grow: calc(2/5);
 }
 
 #section-3{
+  order: 3;
+  flex-grow: calc(3/5);
 }
 
 #section-4{
+  order: 4;
+  flex-basis: 200px;
 }
 
 #section-5{
+  order: 0;
+  /* flex-grow: calc(1/5); */
 }
